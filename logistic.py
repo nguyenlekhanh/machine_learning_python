@@ -76,20 +76,6 @@ def train(features, labels, weights, learning_rate, iter):
     return weights, cost_history
 
 
-# data = [
-#     [4.855064, 9.639962, 1],
-#     [8.62544, 0.058927, 0],
-#     [3.828192, 0.723199, 0],
-#     [7.150955, 3.89942, 1],
-#     [6.4779, 8.198181, 1]
-# ]
-
-
-# columns = ['feature1', 'feature2', 'label']
-# data = pd.read_csv('data_classification.csv')
-# dataframe = pd.DataFrame(data, columns=columns)
-# print(data)
-
 # Extract features (X) and labels (y)
 X = data[['feature1', 'feature2']].values
 y = data['label'].values
@@ -130,3 +116,4 @@ plt.plot(x_boundary, y_boundary, label='Decision Boundary', c='g')
 
 plt.legend()
 plt.show()
+
