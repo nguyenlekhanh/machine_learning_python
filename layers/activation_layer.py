@@ -2,7 +2,7 @@ from .layer import Layer
 import numpy as np
 
 class ActivationLayer(Layer):
-
+    #activateion: relu
     def __init__(self, input_shape, output_shape, activation, activation_prime):
         self.input_shape = input_shape
         self.output_shape = output_shape
